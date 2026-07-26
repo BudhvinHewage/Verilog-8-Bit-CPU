@@ -6,7 +6,8 @@ module tb_cpu;
     reg Reset_A, Reset_B, Enable_Decoder, Reset_C;
 
     wire [7:0] OpCodeCheck, RCheck;
-    wire [0:6] First_Four, First_Sign, Second_Four, Second_Sign;
+    wire [6:0] Led;
+    wire [3:0] Anodes;
     
     CPU DUT (
         .clk(clk),
@@ -18,8 +19,8 @@ module tb_cpu;
         .Reset_C(Reset_C),
         .OpCodeCheck(OpCodeCheck),
         .RCheck(RCheck),
-        .First_Four(First_Four), .First_Sign(First_Sign),
-        .Second_Four(Second_Four), .Second_Sign(Second_Sign)
+        .Led(Led),
+        .Anodes(Anodes)
     );
     
     always #5 clk = ~clk;
