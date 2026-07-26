@@ -1,12 +1,12 @@
 # =====================================================================
 # Vivado Auto-Generated Build & Temp Directories
 # =====================================================================
-.cache/
-.runs/
-.sim/
-.ip_user_files/
-.hw/
-.Xil/
+*.cache/
+*.runs/
+*.sim/
+*.ip_user_files/
+*.hw/
+*.Xil/
 
 # =====================================================================
 # Design Checkpoints & Intermediate Files
