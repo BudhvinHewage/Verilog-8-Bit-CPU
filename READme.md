@@ -116,11 +116,6 @@ To run:
 
 ## Known Issues / TODO
 
-- **Full Vivado project state is checked into the repo** (`.cache/`, `.runs/`, `.sim/`,
-  `.ip_user_files/`, generated `.dcp` files). Standard practice is to `.gitignore` these and
-  keep only `.srcs/`, `.xpr`, and constraint files under version control — worth adding before
-  the repo grows further.
-
 ## Background
 
 Redesign of an earlier VHDL implementation of the same 8-bit CPU/ALU architecture, done as a
