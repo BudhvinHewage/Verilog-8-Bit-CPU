@@ -1,35 +1,21 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 06/18/2026 02:54:15 PM
-// Design Name: 
-// Module Name: dec2to4
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module dec2to4(
     input w0, w1, En,
     output reg [3:0] y
-    );
+);
+    reg [2:0] sel;
 
-always @(*) begin
-    sel = w0 && w1 && En;
-    case (sel)
-        2b'100: y = 4b'0001;
-        2b'101: y = 4b'0010;
-        2b'110: y = 4b'0100;
-        2b'111: y = 4b'1000;
+    always @(*) begin
+        sel = {En, w1, w0}; 
+        
+        case (sel)
+            3'b100:  y = 4'b0001;
+            3'b101:  y = 4'b0010;
+            3'b110:  y = 4'b0100;
+            3'b111:  y = 4'b1000;
+            default: y = 4'b0000; 
+        endcase
+    end
+
 endmodule

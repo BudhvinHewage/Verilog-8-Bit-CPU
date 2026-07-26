@@ -1,27 +1,22 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 06/18/2026 02:54:15 PM
-// Design Name: 
-// Module Name: decod
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-// Convert block diagram to Verilog code for decod design
 
 module decod(
+    input [2:0] w,
+    input En,
+    output [7:0] y
+    );
 
+    dec2to4 decoder1(
+        .w0 (w[0]),
+        .w1 (w[1]),
+        .En (~w[2] & En),
+        .y  (y[3:0])
+    );
+
+    dec2to4 decoder2(
+        .w0 (w[0]),
+        .w1 (w[1]),
+        .En (w[2] & En),
+        .y  (y[7:4])        
     );
 endmodule

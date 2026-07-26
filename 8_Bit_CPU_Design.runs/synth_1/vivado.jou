@@ -1,24 +1,24 @@
 #-----------------------------------------------------------
-# Vivado v2025.2 (64-bit)
-# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
-# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
-# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed May 27 15:23:18 2026
-# Process ID         : 27428
-# Current directory  : C:/Users/budhvin.hewage/TestProject/TestProject.runs/synth_1
-# Command line       : vivado.exe -log led_switch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_switch.tcl
-# Log file           : C:/Users/budhvin.hewage/TestProject/TestProject.runs/synth_1/led_switch.vds
-# Journal file       : C:/Users/budhvin.hewage/TestProject/TestProject.runs/synth_1\vivado.jou
-# Running On         : RCCAL-R7-22
-# Platform           : Windows Server 2016 or Windows 10
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sat Jul 25 20:39:42 2026
+# Process ID         : 4824
+# Current directory  : C:/Users/budhv/Documents/Personal Projects/Verilog-8-Bit-CPU/8_Bit_CPU_Design.runs/synth_1
+# Command line       : vivado.exe -log CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+# Log file           : C:/Users/budhv/Documents/Personal Projects/Verilog-8-Bit-CPU/8_Bit_CPU_Design.runs/synth_1/CPU.vds
+# Journal file       : C:/Users/budhv/Documents/Personal Projects/Verilog-8-Bit-CPU/8_Bit_CPU_Design.runs/synth_1\vivado.jou
+# Running On         : Nexus
+# Platform           : Windows 11
 # Operating System   : 26200
-# Processor Detail   : Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz
-# CPU Frequency      : 3000 MHz
+# Processor Detail   : AMD Ryzen 7 9800X3D 8-Core Processor           
+# CPU Frequency      : 4691 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 8
-# Host memory        : 34169 MB
-# Swap memory        : 5100 MB
-# Total Virtual      : 39269 MB
-# Available Virtual  : 21211 MB
+# Host memory        : 33408 MB
+# Swap memory        : 19327 MB
+# Total Virtual      : 52735 MB
+# Available Virtual  : 21854 MB
 #-----------------------------------------------------------
-source led_switch.tcl -notrace
+source CPU.tcl -notrace

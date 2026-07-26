@@ -1,26 +1,15 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 06/18/2026 02:54:15 PM
-// Design Name: 
-// Module Name: RSU
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module RSU(
-
+    input [7:0] A,
+    input res, clk,
+    output reg [7:0] Q
     );
+
+    always @(posedge res or posedge clk) begin
+        if (res)
+            Q <= 8'b00000000;
+        else
+            Q <= A;
+    end        
 endmodule
