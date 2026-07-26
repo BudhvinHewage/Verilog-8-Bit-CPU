@@ -4,17 +4,15 @@ module CPU(
     // System Inputs
     input clk,
     input data_in,
-    input FSM_Reset,
+    input Reset_All,
+    
     
     // RSU Inputs
     input [7:0] A,
-    input Reset_A,
     input [7:0] B,
-    input Reset_B,
     
     // Decoder & Control Inputs
     input Enable_Decoder,
-    input Reset_C,
     
     // System Outputs
     output [7:0] OpCodeCheck,
@@ -26,12 +24,19 @@ module CPU(
 );
 
     // Internal Wires
+    wire Reset_A,Reset_B,Reset_C,FSM_Reset;
     wire [2:0] current_state_wire;
     wire [7:0] opcode_wire;
     wire [7:0] reg1_wire;
     wire [7:0] reg2_wire;
     wire [7:0] result_wire;
 
+    // Direct input connections to internal wires
+    assign Reset_A = Reset_All;
+    assign Reset_B = Reset_All;
+    assign Reset_C = Reset_All;
+    assign FSM_Reset = Reset_All;
+    
     // Direct output connections from internal wires
     assign OpCodeCheck = opcode_wire;
     assign RCheck      = result_wire;

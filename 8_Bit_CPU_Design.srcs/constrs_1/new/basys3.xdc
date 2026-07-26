@@ -107,9 +107,9 @@ set_property -dict { PACKAGE_PIN W4   IOSTANDARD LVCMOS33 } [get_ports {Anodes[3
 ## =====================================================================
 ## Push Buttons
 ## =====================================================================
-## Center Button (BTNC) -> FSM_Reset
-set_property PACKAGE_PIN U18 [get_ports FSM_Reset]						
-	set_property IOSTANDARD LVCMOS33 [get_ports FSM_Reset]
+## Center Button (BTNC) -> Reset_All
+set_property PACKAGE_PIN U18 [get_ports Reset_All]						
+	set_property IOSTANDARD LVCMOS33 [get_ports Reset_All]
 
 ## Right Button (BTNR) -> data_in
 set_property PACKAGE_PIN T17 [get_ports data_in]						

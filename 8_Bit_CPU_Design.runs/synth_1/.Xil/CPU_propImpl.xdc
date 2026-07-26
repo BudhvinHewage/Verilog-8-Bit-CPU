@@ -88,7 +88,7 @@ set_property -dict { PACKAGE_PIN V4   IOSTANDARD LVCMOS33 } [get_ports {Anodes[2
 set_property src_info {type:XDC file:1 line:105 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W4   IOSTANDARD LVCMOS33 } [get_ports {Anodes[3]}]
 set_property src_info {type:XDC file:1 line:111 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN U18 [get_ports FSM_Reset]
+set_property PACKAGE_PIN U18 [get_ports Reset_All]
 set_property src_info {type:XDC file:1 line:115 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T17 [get_ports data_in]
 set_property src_info {type:XDC file:1 line:118 export:INPUT save:INPUT read:READ} [current_design]

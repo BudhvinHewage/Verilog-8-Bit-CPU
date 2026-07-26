@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
-| Date         : Sat Jul 25 20:40:07 2026
+| Date         : Sat Jul 25 21:00:43 2026
 | Host         : Nexus running 64-bit major release  (build 9200)
 | Command      : report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb
 | Design       : CPU
@@ -39,7 +39,7 @@ Table of Contents
 |   Register as Latch     |    0 |     0 |          0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |          0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
-| Unique Control Sets     |    5 |       |          0 |      8150 |  0.06 |
+| Unique Control Sets     |    3 |       |          0 |      8150 |  0.04 |
 +-------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
@@ -95,7 +95,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   50 |     0 |          0 |       106 | 47.17 |
+| Bonded IOB                  |   47 |     0 |          0 |       106 | 44.34 |
 | Bonded IPADs                |    0 |     0 |          0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
@@ -158,7 +158,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | LUT4     |   36 |                 LUT |
 | FDCE     |   31 |        Flop & Latch |
 | OBUF     |   27 |                  IO |
-| IBUF     |   23 |                  IO |
+| IBUF     |   20 |                  IO |
 | FDRE     |   18 |        Flop & Latch |
 | LUT2     |   12 |                 LUT |
 | LUT5     |    8 |                 LUT |

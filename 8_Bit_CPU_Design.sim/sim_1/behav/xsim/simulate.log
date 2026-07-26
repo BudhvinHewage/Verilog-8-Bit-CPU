@@ -7,4 +7,4 @@ The current result is 251
 The current result is 2
 The current result is 6
 The current result is 12
-$finish called at time : 190 ns : File "C:/Users/budhv/Documents/Personal Projects/Verilog-8-Bit-CPU/8_Bit_CPU_Design.srcs/sim_1/new/tb_cpu.v" Line 47
+$finish called at time : 190 ns : File "C:/Users/budhv/Documents/Personal Projects/Verilog-8-Bit-CPU/8_Bit_CPU_Design.srcs/sim_1/new/tb_cpu.v" Line 45

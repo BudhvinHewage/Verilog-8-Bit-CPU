@@ -58,7 +58,7 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param general.usePosixSpawnForFork 1
-set_param synth.incrementalSynthesisCache C:/Users/budhv/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-29572-Nexus/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/budhv/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-22496-Nexus/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -95,9 +95,6 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 read_xdc {{C:/Users/budhv/Documents/Personal Projects/Verilog-8-Bit-CPU/8_Bit_CPU_Design.srcs/constrs_1/new/basys3.xdc}}
 set_property used_in_implementation false [get_files {{C:/Users/budhv/Documents/Personal Projects/Verilog-8-Bit-CPU/8_Bit_CPU_Design.srcs/constrs_1/new/basys3.xdc}}]
-
-read_xdc {{C:/Users/budhv/Documents/Personal Projects/Verilog-8-Bit-CPU/8_Bit_CPU_Design.srcs/constrs_1/new/CPU.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/budhv/Documents/Personal Projects/Verilog-8-Bit-CPU/8_Bit_CPU_Design.srcs/constrs_1/new/CPU.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
