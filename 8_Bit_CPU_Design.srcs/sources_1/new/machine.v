@@ -12,11 +12,22 @@ module machine(
     parameter S5 = 3'b101;
     parameter S6 = 3'b110;
     parameter S7 = 3'b111;
-
+    
+    reg data_in_previous_state; 
+    
+    always @(posedge clk or posedge reset) begin
+        if (reset)
+            data_in_previous_state <= 1'b0;
+        else 
+            data_in_previous_state <= data_in;            
+    end
+    
+    wire data_in_current_state = data_in && !data_in_previous_state;
+    
     always @(posedge clk or posedge reset) begin
         if (reset) 
             current_state <= S0;
-        else if (data_in)
+        else if (data_in_current_state)
             case (current_state)
                 S0: if (data_in) current_state <= S1;
                 S1: if (data_in) current_state <= S2;
