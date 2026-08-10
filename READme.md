@@ -111,8 +111,8 @@ To run:
 - [x] Implementation run — surfaced the need for a physical `Enable_Decoder` button, added
       and constrained
 - [x] All top-level ports pin-constrained; resets consolidated to a single `Reset_All` input
-- [ ] Bitstream generated and programmed to hardware
-- [ ] On-board validation across all 8 opcodes
+- [x] Bitstream generated and programmed to hardware
+- [x] On-board validation across all 8 opcodes
 
 ## Known Issues / TODO
 
@@ -120,4 +120,4 @@ To run:
 
 Redesign of an earlier VHDL implementation of the same 8-bit CPU/ALU architecture, done as a
 self-directed exercise in re-deriving the same digital logic in Verilog rather than
-transliterating syntax 1:1.
+transliterating syntax 1:1. 
